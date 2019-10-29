@@ -1,0 +1,63 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "price": {
+      "type": "float",
+      "min": 1,
+      "required": true
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "discount_price": {
+      "type": "float"
+    },
+    "package_content": {
+      "required": true,
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "is_organic": {
+      "type": "boolean"
+    },
+    "features": {
+      "type": "richtext"
+    },
+    "is_visible": {
+      "default": true,
+      "type": "boolean"
+    },
+    "subcategory": {
+      "model": "subcategory",
+      "via": "products"
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "product"
+    }
+  }
+}

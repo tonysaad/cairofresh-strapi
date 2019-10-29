@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "supplier",
+    "description": "Item supplier or farmer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "product": {
+      "model": "product",
+      "via": "supplier"
+    },
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "meta_data": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "subcategories",
+  "info": {
+    "name": "subcategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string",
+      "unique": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "meta_data": {
+      "type": "json"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "is_visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "category": {
+      "model": "category",
+      "via": "subcategories"
+    },
+    "products": {
+      "collection": "product",
+      "via": "subcategory"
+    }
+  }
+}
