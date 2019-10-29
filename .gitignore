@@ -111,5 +111,4 @@ exports
 .cache
 build
 
-# Local Netlify folder
-.netlify
+package-lock.json
