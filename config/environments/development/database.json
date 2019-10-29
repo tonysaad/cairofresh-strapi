@@ -4,17 +4,12 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "client": "mongodb",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "srv": "${process.env.DATABASE_SRV || false}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}",
-        "ssl": "${process.env.DATABASE_SSL || false}"
+        "uri": "mongodb+srv://cairofresh:Av9gqZ8fPVge83VU@cairofresh-uyone.mongodb.net/test?retryWrites=true&w=majority",
+        "ssl": "${process.env.DATABASE_SSL || true}",
+        "database": "${process.env.DATABASE_NAME || 'cairofresh'}"
       },
       "options": {
-        "ssl": "${process.env.DATABASE_SSL || false}",
+        "ssl": "${process.env.DATABASE_SSL || true}",
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}"
       }
     }
