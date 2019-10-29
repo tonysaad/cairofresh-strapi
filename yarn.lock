@@ -7233,10 +7233,37 @@ mongodb@3.3.2:
     require_optional "^1.0.1"
     safe-buffer "^5.1.2"
 
+mongoose-float@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mongoose-float/-/mongoose-float-1.0.4.tgz#abdda2c66320a8acf8a13a8b704c9b7ea4b5b840"
+  integrity sha512-0IMn9yADWithih3QEiwiqx+gYAEx5ZIQgKrIaLTX76jfJIq5WRzifGT/KDGqGm5q9NI5WLsgt7oblM3hNv/llw==
+
 mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
+
+mongoose-long@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/mongoose-long/-/mongoose-long-0.2.1.tgz#2d4f560430338bfbe7129e31a543c497a2d6a4db"
+  integrity sha512-cbzEW5rShz8MxoTMFUidf13KObGkauA4ILeR3XcIdI7VLzMXwwXy///gLAbN2fD6vYy2ZAMDnCopQrCkNH9VNQ==
+
+mongoose@5.7.4:
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.7.4.tgz#b6a77a9217dace917ab028fa5dc72f400f2faf4b"
+  integrity sha512-IgqQS5HIaZ8tG2cib6QllfIw2Wc/A0QVOsdKLsSqRolqJFWOjI0se3vsKXLNkbEcuJ1xziW3e/jPhBs65678Hg==
+  dependencies:
+    bson "~1.1.1"
+    kareem "2.3.1"
+    mongodb "3.3.2"
+    mongoose-legacy-pluralize "1.0.2"
+    mpath "0.6.0"
+    mquery "3.2.2"
+    ms "2.1.2"
+    regexp-clone "1.0.0"
+    safe-buffer "5.1.2"
+    sift "7.0.1"
+    sliced "1.0.1"
 
 mongoose@^5.5.13:
   version "5.7.5"
@@ -10718,6 +10745,18 @@ strapi-hook-knex@3.0.0-beta.17.2:
     knex "^0.19.0"
     lodash "^4.17.11"
 
+strapi-hook-mongoose@^3.0.0-beta.17.4:
+  version "3.0.0-beta.17.4"
+  resolved "https://registry.yarnpkg.com/strapi-hook-mongoose/-/strapi-hook-mongoose-3.0.0-beta.17.4.tgz#749b4af9e7554e46cc7e728c975b1c61d7f48408"
+  integrity sha512-GxmrPxrwWTPyrJGzL0Hdn28ohAc4lCvTeHEMe5BbiF2V0NYhUPbkzgciu12RVKFbzl920y8m4TnpVVJGxNXctQ==
+  dependencies:
+    lodash "^4.17.11"
+    mongoose "5.7.4"
+    mongoose-float "^1.0.4"
+    mongoose-long "^0.2.1"
+    pluralize "^7.0.0"
+    strapi-utils "3.0.0-beta.17.4"
+
 strapi-plugin-content-manager@3.0.0-beta.17.2:
   version "3.0.0-beta.17.2"
   resolved "https://registry.yarnpkg.com/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-beta.17.2.tgz#e8416c8a2c56358208d45a1f65a26a9595665492"
@@ -10894,6 +10933,19 @@ strapi-utils@3.0.0-beta.17.2:
   version "3.0.0-beta.17.2"
   resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.0-beta.17.2.tgz#814b98885a9c8ba356b75ce2995d388ffb38f6dd"
   integrity sha512-+Vm9tAtf21QUZlZWTyuEug6JK610+svfeSOjAc/MbOA2J80226Ln33hJm1DDrXa5hrfKCvhmjVcnu4W9eLJ5lg==
+  dependencies:
+    commander "^2.20.0"
+    joi-json "^2.1.0"
+    knex "^0.16.5"
+    lodash "^4.17.11"
+    pino "^4.7.1"
+    pluralize "^7.0.0"
+    shelljs "^0.8.3"
+
+strapi-utils@3.0.0-beta.17.4:
+  version "3.0.0-beta.17.4"
+  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.0-beta.17.4.tgz#4940c71df5ef80307887e137aa3daee4ca0318fa"
+  integrity sha512-zTb1DWPCeInADTIUQPsNBU2vShDsffWfZyixFYcf6j2+yMYOYkZPYSWpF4sHaBiEwZHumQUHOFaI30BFNKakVQ==
   dependencies:
     commander "^2.20.0"
     joi-json "^2.1.0"
