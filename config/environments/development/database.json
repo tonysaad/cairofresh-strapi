@@ -4,12 +4,10 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "uri": "mongodb+srv://cairofresh:Av9gqZ8fPVge83VU@cairofresh-uyone.mongodb.net/test?retryWrites=true&w=majority",
-        "ssl": "${process.env.DATABASE_SSL || true}",
-        "database": "${process.env.DATABASE_NAME || 'cairofresh'}"
+        "uri": "${process.env.DATABASE_URI} || mongodb://127.0.0.1:27017/strapi"
       },
       "options": {
-        "ssl": "${process.env.DATABASE_SSL || true}",
+        "ssl": "${process.env.DATABASE_SSL || false}",
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}"
       }
     }

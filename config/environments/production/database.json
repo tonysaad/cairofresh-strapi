@@ -4,9 +4,7 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "uri": "${process.env.DATABASE_URI}",
-        "ssl": "${process.env.DATABASE_SSL || true}",
-        "database": "${process.env.DATABASE_NAME || 'cairofresh'}"
+        "uri": "${process.env.DATABASE_URI}"
       },
       "options": {
         "ssl": "${process.env.DATABASE_SSL || true}",
