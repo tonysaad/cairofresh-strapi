@@ -112,4 +112,3 @@ exports
 build
 
 package-lock.json
-yarn.lock
