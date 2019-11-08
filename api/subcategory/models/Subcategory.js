@@ -7,7 +7,7 @@ const axios = require('axios');
 
 module.exports = {
   afterCreate: async (entry) => {
-    axios.post(strapi.config.currentEnvironment.netlifyBuild, entry)
+    axios.post(strapi.config.currentEnvironment.netlifyBuild)
       .catch((err) => {
           console.error('Something went wrong while calling Netlify Web Hook');
           console.error(err);
@@ -16,7 +16,7 @@ module.exports = {
   },
 
   afterUpdate: async (entry) => {
-    axios.post(strapi.config.currentEnvironment.netlifyBuild, entry)
+    axios.post(strapi.config.currentEnvironment.netlifyBuild)
       .catch((err) => {
           console.error('Something went wrong while calling Netlify Web Hook');
           console.error(err);
@@ -25,7 +25,7 @@ module.exports = {
   },
 
   afterDestroy: async (entry) => {
-    axios.post(strapi.config.currentEnvironment.netlifyBuild, entry)
+    axios.post(strapi.config.currentEnvironment.netlifyBuild)
       .catch((err) => {
           console.error('Something went wrong while calling Netlify Web Hook');
           console.error(err);

@@ -1,3 +1,3 @@
 {
-  "myCustomConfiguration": "This configuration is accessible through strapi.config.environments.development.myCustomConfiguration"
+  "netlifyBuild": "https://api.netlify.com/build_hooks/5dc4b18266be351c0432ee57"
 }
