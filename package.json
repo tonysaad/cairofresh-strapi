@@ -12,7 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "axios": "^0.19.0",
-    "strapi": "3.0.0-beta.17.2",
+    "strapi": "3.6.8",
     "strapi-admin": "3.0.0-beta.17.2",
     "strapi-hook-mongoose": "^3.0.0-beta.17.4",
     "strapi-plugin-content-manager": "3.0.0-beta.17.2",
